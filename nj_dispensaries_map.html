@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e1a59ea13bf5e45da76480a06b35c05d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e1a59ea13bf5e45da76480a06b35c05d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e1a59ea13bf5e45da76480a06b35c05d = L.map(
+                "map_e1a59ea13bf5e45da76480a06b35c05d",
+                {
+                    center: [40.236255, -74.551618],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 9,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b606f5a3bd2113298b96f2ee55b325f6 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e1a59ea13bf5e45da76480a06b35c05d);
+        
+    
+            var marker_2219a01e432cca3e05ad2b0120141b3e = L.marker(
+                [40.2363, -74.5516],
+                {}
+            ).addTo(map_e1a59ea13bf5e45da76480a06b35c05d);
+        
+    
+            var icon_e1b4785976e198f8691b2c7275ae20c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2219a01e432cca3e05ad2b0120141b3e.setIcon(icon_e1b4785976e198f8691b2c7275ae20c7);
+        
+    
+        var popup_9b0f148933c4adaf978d0a0708c9bc82 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_94bf7dae112c99e7066e3772bd18bbf5 = $(`<div id="html_94bf7dae112c99e7066e3772bd18bbf5" style="width: 100.0%; height: 100.0%;"><b>Dispensary A</b><br>Type: Medical</div>`)[0];
+            popup_9b0f148933c4adaf978d0a0708c9bc82.setContent(html_94bf7dae112c99e7066e3772bd18bbf5);
+        
+
+        marker_2219a01e432cca3e05ad2b0120141b3e.bindPopup(popup_9b0f148933c4adaf978d0a0708c9bc82)
+        ;
+
+        
+    
+    
+            var marker_ea39d5d5fd530d5488fb7f20876c9448 = L.marker(
+                [40.2922, -74.6497],
+                {}
+            ).addTo(map_e1a59ea13bf5e45da76480a06b35c05d);
+        
+    
+            var icon_89f1eb3009cfe6ee205e97facc4d35aa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ea39d5d5fd530d5488fb7f20876c9448.setIcon(icon_89f1eb3009cfe6ee205e97facc4d35aa);
+        
+    
+        var popup_2cd65e3e1736fe55d0a632923268016c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_498cb29a061fb9d2f443f8e2f2ca0093 = $(`<div id="html_498cb29a061fb9d2f443f8e2f2ca0093" style="width: 100.0%; height: 100.0%;"><b>Dispensary B</b><br>Type: Recreational</div>`)[0];
+            popup_2cd65e3e1736fe55d0a632923268016c.setContent(html_498cb29a061fb9d2f443f8e2f2ca0093);
+        
+
+        marker_ea39d5d5fd530d5488fb7f20876c9448.bindPopup(popup_2cd65e3e1736fe55d0a632923268016c)
+        ;
+
+        
+    
+    
+            var marker_2b1944181c56d450ce41510a166f9405 = L.marker(
+                [40.3217, -74.7124],
+                {}
+            ).addTo(map_e1a59ea13bf5e45da76480a06b35c05d);
+        
+    
+            var icon_2c1815ca6f53b61b8f503f83d2c97278 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2b1944181c56d450ce41510a166f9405.setIcon(icon_2c1815ca6f53b61b8f503f83d2c97278);
+        
+    
+        var popup_229594cf950d30f0afd13946033101f9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_15bad46cf60bb9f4209d0d69895c748c = $(`<div id="html_15bad46cf60bb9f4209d0d69895c748c" style="width: 100.0%; height: 100.0%;"><b>Dispensary C</b><br>Type: Hybrid</div>`)[0];
+            popup_229594cf950d30f0afd13946033101f9.setContent(html_15bad46cf60bb9f4209d0d69895c748c);
+        
+
+        marker_2b1944181c56d450ce41510a166f9405.bindPopup(popup_229594cf950d30f0afd13946033101f9)
+        ;
+
+        
+    
+</script>
+</html>
